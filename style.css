@@ -1,0 +1,178 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fb;
+  color: #222;
+}
+
+header {
+  background: #22223b;
+  color: #fff;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #f2a365;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem 2rem 2rem;
+  background: #f2a365;
+  color: #22223b;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-right: 2.5rem;
+  border: 5px solid #22223b;
+  object-fit: cover;
+  background: #fff;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 2.3rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.hero-content span {
+  color: #22223b;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.socials a {
+  margin-right: 1rem;
+  color: #22223b;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 2rem;
+}
+
+section h2 {
+  color: #22223b;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #f2a365;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.timeline div {
+  margin-bottom: 1.2rem;
+}
+
+.experience-item ul, .project-list ul, .skills-list, #achievements ul {
+  margin: 0.5rem 0 0 1.2rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.project {
+  flex: 1 1 250px;
+  background: #f7f9fb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.skills-list li {
+  margin-bottom: 0.4rem;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #f2a365;
+  color: #22223b;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.resume-btn:hover {
+  background: #22223b;
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #22223b;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-pic {
+    margin-right: 0;
+    margin-bottom: 1.2rem;
+  }
+  .project-list {
+    flex-direction: column;
+  }
+}
